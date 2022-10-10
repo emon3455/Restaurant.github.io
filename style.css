@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html{
+    font-size: 62.5%;
+    cursor: pointer;
+}
+
+body{
+    background-color: #0c0c0c;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.btn{
+    padding: 1rem 2rem;
+    background-color: tomato;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    transition: all 0.4s ease-in;
+    margin: 1rem 0rem;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    font-size: 1.5;
+}
+
+.paragraph{
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Common style end */
+
+
+
+/* Header section style start */
+.nav{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: black;
+    
+}
+
+.nav-head{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+
+.nav-menu{
+    align-self: center;
+    margin: 1rem;
+}
+
+.nav-menu .nav-list{
+    list-style: none;
+    text-align: center;
+}
+
+.nav-menu .nav-item{
+    text-decoration: none;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav-menu .nav-list:hover .nav-item{  
+   color: tomato;     
+}
+/* header style end */
+
+
+
+/* Hero section start here */
+
+.hero{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.hero__image{
+    max-width: 90%;
+    max-height: 70%;
+}
+
+.hero__background{
+    flex: 0.5;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero__info{
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.hero-header{
+    font-size: 2.5rem;
+    color: tomato;
+}
+
+.hero-details{
+    font-size: 1.7rem;
+    color: white;
+    text-align: center;
+}
+/* Hero section end here */
+
+
+
+/* <-- About Section start here --> */
+
+.about-img{
+    max-width: 90%;
+    max-height: 70%;
+    margin-left: 2rem;
+    padding: 2rem;
+}
+
+.about-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.about-header{
+    color: #da5e48;
+    font-size: 3rem;
+    margin: 5rem 0;
+    flex-basis: 30%;
+}
+
+.about-content{
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.about-intro{
+    text-align: center;
+    padding: 1rem;
+}
+
+/* <-- About Section end here --> */
+
+
+
+/* food menu section start */
+   
+.food__image{
+    max-width: 80%;
+    max-height: 60%;
+}    
+
+.food__menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+} 
+
+.food-header{
+    font-size: 3rem;
+    color: #da5e48;
+    text-align: center;
+    flex: 0.3;
+    margin-top: 6rem;
+}
+
+.food__content{
+    flex: 0.7;
+}
+
+.content-intro{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}    
+
+.food__images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}    
+
+.food-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font: 4rem;
+    text-align: center;
+    background-color: #ffeadc;
+    margin: 3rem;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;  
+}  
+
+.food-img:hover{
+    transform: scale(1.1);
+}
+
+.food-btn{
+    padding: 0.5rem;
+    display: inline-block;
+}    
+/* food menu section end */
+
+
+/* Service section start */
+
+.service__img{
+    max-width: 80%;
+    padding: 2rem;
+}
+
+
+.service-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service__header{
+    color: #da5e48;
+    font-size: 4rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.service__intro{
+    color: aliceblue;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.service__content , .services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.serv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding: 2rem;
+
+    transition: transform 0.4s ease-in;
+
+}
+
+.service__container:hover{
+    transform: scale(1.1);
+}
+
+.service__title{
+    color: #da5e48;
+    font-size: 2rem;
+}
+/* Service section start */
+
+
+
+/* contact section start */
+
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem;
+    }
+
+    .contact__header{
+        color: #da5e48;
+        font-size: 4rem;
+        text-align: center;
+        margin: 5rem;
+    }
+
+    .contact-card{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffeadc;
+        font-size: 2rem;
+        color: #0c0c0c;
+        text-align: center;
+        padding: 2rem;
+        border-radius: 20px;
+        
+    }
+
+    .card-btn{
+        border: none;
+    }
+
+/* contact section end */
+
+
+
+/* Footer sction start */
+
+.footer{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    
+}
+
+.copy{
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+.social{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social__list{
+    list-style: none;
+    text-align: center;
+    margin: 0 1rem;
+    padding: 0.5rem;
+}
+
+.social-link{
+    color: aliceblue;
+}
+
+.social__list:hover {
+    color: cyan;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 0.4rem#26b3b3,
+                0 0 0.4rem#2ed6d6;
+    
+}
+
+
+/* Footer sction start */
+
+
+/* Media query start */
+
+
+/* for small phone */
+@media screen and (max-width: 400px) {
+    /* hero section */
+    .hero-header{
+        font-size: 2.5rem;
+    }
+    
+    .hero-details{
+        font-size: 1.7rem;
+    }
+    /* hero section */
+
+    /* footer section */
+    .copy{
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+
+}
+
+/* For mobile */
+@media screen and (max-width: 767px) {
+
+    .hidden{
+        display: none;
+    }
+
+    /* hero style start */
+    .hero-header{
+        font-size: 2.7rem;
+    }
+    
+    .hero-details{
+        font-size: 2rem;
+    }
+    /* hero style end */
+
+
+}
+
+/* For tablet */
+@media screen and (min-width: 768px) {
+
+   /* Menu icon style start */
+    .menu-icon{
+        display: none;
+    }
+    .navigation{
+        flex-direction: row;  
+    }
+    .nav-menu{
+        display: flex;
+    }
+    /* Menu icon style end */
+
+
+    /* hero style start */
+    .hero-header{
+        font-size: 3.5rem;
+    }
+    
+    .hero-details{
+        font-size: 2.5rem;
+    }
+
+    .hero{      
+        flex-direction: row;  
+    }
+    /* hero style end */
+
+    /* about section start */
+    .about-header{
+        color: #da5e48;
+        font-size: 3rem;
+        margin: 5rem 0 2rem 0;
+        flex-basis: 30%;
+    }
+    .about-content{      
+        flex-direction: row;
+    }
+    .about-pic{
+        width: 100%;
+    }
+    /* about section end */
+
+    /* Food menu section */
+    .food__images{
+        flex-direction: row;        
+    }   
+    /* Food menu section */
+    .serv{
+     
+        flex-direction: row;
+        
+    }    
+    /* service section */
+
+    /* footer */
+    .footer{   
+        flex-direction: row;
+        padding: 1rem;     
+    }
+    
+
+
+}
+
+
+
+/* for pc */
+@media screen and (min-width: 1024px) {
+    html{
+        font-size: 80%;
+    }
+    .hero__image{
+        max-width: 80%;
+        max-height: 60%;
+        padding: 1rem;
+    }
+
+}
+
+/* Media query end */
+
+
